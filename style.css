@@ -2,12 +2,20 @@
   font-family: Edge;
   src: url('assets/Edge.ttf');
 }
+@font-face {
+  font-family: IBM;
+  src: url('assets/IBM.ttf');
+}
+@font-face {
+  font-family: Rubik;
+  src: url('assets/Rubik.ttf');
+}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: whitesmoke;
+  /*background-color: whitesmoke;*/
   overflow-x: hidden;
   overflow: hidden;
   font-family: Arial;
@@ -107,8 +115,10 @@ nav {
   opacity: 0;
   transform: translate(15px ,0);
 }
-
-
+/*hamburger action*/
+.slide{
+  transform: translate(0 0);
+}
 /*circle*/
 
 .circle {
@@ -183,11 +193,12 @@ nav {
 .profile img {
   width: 35%;
   height: 35%;
-  border-radius: 5px;
+  border-radius: 25px;
   margin-top: 10px;
   margin-right: 20px;
 }
 .profile pre {
+  font-family: Rubik;
   text-align: center;
   margin-top: 20px;
   font-size: 18px;
@@ -200,6 +211,7 @@ nav {
   text-align: center;
   margin-top: 10px;
   padding: 5px;
+  font-family: IBM;
 }
 .about h2{
   margin-bottom: 10px;
@@ -209,6 +221,7 @@ nav {
 
 /*project*/
 .project h2{
+  font-family: IBM;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -228,6 +241,7 @@ nav {
 
 /*contact me*/
 .contact {
+  font-family: IBM;
   text-align: center;
 }
 .contact #email {
